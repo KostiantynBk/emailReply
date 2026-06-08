@@ -671,7 +671,7 @@ HTML = """
       color: #182024;
     }
     body { margin: 0; }
-    main { max-width: 1120px; margin: 0 auto; padding: 32px 20px; }
+    main { width: 78%; max-width: 1040px; min-width: 760px; margin: 0 auto; padding: 32px 20px; }
     header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
     h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; letter-spacing: 0; }
     p { margin: 0; color: #4c5b61; line-height: 1.5; }
@@ -702,6 +702,7 @@ HTML = """
     .reply { white-space: pre-wrap; line-height: 1.5; color: #253238; }
     .empty { min-height: 260px; display: grid; place-items: center; color: #66767c; text-align: center; }
     @media (max-width: 820px) {
+      main { width: auto; min-width: 0; }
       header, .layout { display: block; }
       .panel { margin-top: 16px; }
       .metrics { grid-template-columns: 1fr; }
